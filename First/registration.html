@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="registrationstyle.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="progress-bar">
+        <div class="step active">1</div>
+        <div class="step">2</div>
+        <div class="step">3</div>
+        <div class="step">4</div>
+      </div>
+      <form class="multiform">
+        <div class="form-step active">
+          <h2 class="pi">Personal Information</h2>
+
+          <label for="name">Full Name</label>
+          <input type="text" id="name" /><br />
+
+          <label for="name">Email</label>
+          <input type="email" id="email" />
+
+          <label for="password">Password</label>
+<input type="password" id="password" name="password" required />
+
+<label for="confirm-password">Confirm Password</label>
+<input type="password" id="confirm-password" name="confirm-password" required />
+
+          <div class="btn-group">
+            <button class="nxt-btn">Next</button>
+          </div>
+        </div>
+        <div class="form-step">
+          <h2>Contact Details</h2>
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" />
+
+          <label for="address">Address</label>
+          <input type="name" id="address" />
+
+          <label for="gender">Gender</label>
+          <div class="gender-group">
+            <input type="radio" id="male" name="gender" value="Male" required />
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female" />
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other" />
+            <label for="other">Other</label>
+          </div>
+
+          <label for="city">City</label>
+          <select id="city" name="city" required>
+            <option value="">Select City</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Pune">Pune</option>
+            <option value="Ahmedabad">Ahmedabad</option>
+            <option value="Other">Other</option>
+          </select>
+
+          <div class="btn-group">
+            <button class="prev-btn">Previous</button>
+            <button class="nxt-btn">Next</button>
+          </div>
+        </div>
+        <div class="form-step">
+          <h2>Skills</h2>
+
+          <label>Select your skills <span style="color: red">*</span></label>
+          <div class="skills-group" style="margin: 10px 0">
+            <input type="checkbox" id="html" name="skills" value="HTML" />
+            <label for="html">HTML</label>
+            <input type="checkbox" id="css" name="skills" value="CSS" />
+            <label for="css">CSS</label>
+            <input
+              type="checkbox"
+              id="javascript"
+              name="skills"
+              value="JavaScript"
+            />
+            <label for="javascript">JavaScript</label>
+          </div>
+          <div
+            id="skills-error"
+            style="color: red; display: none; font-size: 14px"
+          >
+            Please select at least one skill.
+          </div>
+
+          <div class="btn-group">
+            <button class="prev-btn">Previous</button>
+            <button class="nxt-btn">Next</button>
+          </div>
+        </div>
+
+        <div class="form-step">
+          <h2>Conformation</h2>
+          <p>Conform your detail and submit</p>
+
+          <div class="terms-group" style="margin: 15px 0">
+            <input type="checkbox" id="accept-terms" name="accept-terms" />
+            <label for="accept-terms"
+              >I accept the
+              <a href="#" target="_blank">terms and conditions</a>
+              <span style="color: red">*</span></label
+            >
+          </div>
+          <div
+            id="terms-error"
+            style="color: red; display: none; font-size: 14px"
+          >
+            You must accept the terms and conditions.
+          </div>
+
+          <div class="btn-group">
+            <button class="prev-btn">Previous</button>
+            <button class="nxt-btn">Next</button>
+          </div>
+        </div>
+      </form>
+      <div style="text-align:center; margin-top: 18px; color: #fff; font-size: 16px;">
+        Already have an account? <a href="login.html" style="color:#fff; text-decoration:underline; font-weight:bold;">Login</a>
+      </div>
+    </div>
+
+    <script src="registrationscript.js"></script>
+  </body>
+</html>
